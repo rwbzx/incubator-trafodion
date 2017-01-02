@@ -22,11 +22,13 @@
     <ClCompile Include="..\src\common\Global.cpp" />
     <ClCompile Include="..\src\common\TestBase.cpp" />
     <ClCompile Include="..\src\Main.cpp" />
+    <ClCompile Include="..\src\test\authentication\TestLdap.cpp" />
     <ClCompile Include="..\src\test\Varchar32k\LargeVarcharCol.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\common\Global.h" />
     <ClInclude Include="..\src\common\TestBase.h" />
+    <ClInclude Include="..\src\test\authentication\TestLdap.h" />
     <ClInclude Include="..\src\test\Varchar32k\LargeVarcharCol.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

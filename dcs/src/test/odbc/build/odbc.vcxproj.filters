@@ -25,6 +25,9 @@
     <ClCompile Include="..\src\test\Varchar32k\LargeVarcharCol.cpp">
       <Filter>Test</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\test\authentication\TestLdap.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\common\Global.h">
@@ -34,6 +37,9 @@
       <Filter>Common</Filter>
     </ClInclude>
     <ClInclude Include="..\src\test\Varchar32k\LargeVarcharCol.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\authentication\TestLdap.h">
       <Filter>Test</Filter>
     </ClInclude>
   </ItemGroup>

@@ -23,10 +23,11 @@
 
 #include "common/Global.h"
 #include "test/varchar32k/LargeVarcharCol.h"
+#include "test/authentication/TestLdap.h"
 
 int main(int argc, char * argv[])
 {
-	if (argc != 7)
+	/*if (argc != 7)
 	{
 		std::cout << "Usage: " << argv[0] << " -d <datasource> -u <userid> -p <password>" << endl;
 		return -1;
@@ -37,21 +38,23 @@ int main(int argc, char * argv[])
 
 	if ((strcmp(inputArgs[0], "-d") != 0) || (strcmp(inputArgs[2], "-u") != 0) || (strcmp(inputArgs[4], "-p") != 0))
 	{
+
 		std::cout << "Usage: " << argv[0] << " -d <datasource> -u <userid> -p <password>" << endl;
 		return -1;
-	}
+	}*/
 
 	char chDsn[100];
 	char chUID[100];
 	char chPwd[100];
-	strcpy(chDsn, inputArgs[1]);
+	/*strcpy(chDsn, inputArgs[1]);
 	strcpy(chUID, inputArgs[3]);
-	strcpy(chPwd, inputArgs[5]);
+	strcpy(chPwd, inputArgs[5]);*/
 
-	CLargeVarcharCol * pTestItem = new CLargeVarcharCol(chDsn, chUID, chPwd);
+	CTestLdap * pTestItem = new CTestLdap("trafodion", "zx", "123456");
 	pTestItem->Run();
 
 	delete pTestItem;
+	getchar();
 	return 0;
 }
 
